@@ -7,10 +7,10 @@ import Testimonials from "../components/home/testimonilas";
 export default async function Home() {
   return (
     <div>
-      <Hero />
+      {/* <Hero />
       <CardSection />
       <PricingPlan />
-      <Testimonials />
+      <Testimonials /> */}
     </div>
   );
 }
