@@ -1,37 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Assignment-1
+
+A web hosting company landing page built with **Next.js 14** and **Tailwind CSS**. Features a flash-sale countdown, pricing plans, feature cards, and customer testimonials.
+
+## Features
+
+- Flash sale banner with live countdown timer
+- Hero section with discount headline and CTA
+- Feature cards (speed, support, uptime)
+- Interactive pricing table with monthly/yearly toggle
+- Customer testimonials with Google reviews
+- Responsive navigation with mobile drawer menu
+- Fully responsive design (mobile-first)
+
+## Tech Stack
+
+- **Framework:** Next.js 14 (App Router)
+- **Styling:** Tailwind CSS + SCSS
+- **UI Library:** Ant Design
+- **Icons:** React Icons
+- **Language:** JavaScript
+- **Fonts:** Roboto, Montserrat
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+git clone https://github.com/Jewel-190237/Assignment-1.git
+cd Assignment-1
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server |
+| `npm run build` | Build for production |
+| `npm run start` | Start production server |
+| `npm run lint` | Run ESLint |
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+Assignment-1/
+├── app/
+│   ├── (landing)/
+│   │   ├── layout.js        # Landing page layout
+│   │   └── page.js          # Main landing page
+│   ├── components/
+│   │   ├── layout/
+│   │   │   ├── navbar.js    # Navigation bar
+│   │   │   └── footer.js    # Footer
+│   │   └── home/
+│   │       ├── hero.js      # Hero section with countdown
+│   │       ├── cardsection.js # Feature cards
+│   │       ├── pricing.js   # Pricing plans
+│   │       └── testimonilas.js # Testimonials
+│   ├── globals.scss         # Global styles
+│   └── layout.js            # Root layout
+├── public/                  # Static assets
+├── tailwind.config.js       # Tailwind configuration
+└── next.config.js           # Next.js configuration
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# garage-nextjs
+MIT
